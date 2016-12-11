@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html >
-  <head ><link rel="icon" type="png" href="earth.png"> </link>
+  <head ><link rel="icon" type="png" href="earth.png"></link>
   </head>
   <script>
 	function agnes()
@@ -20,6 +20,13 @@
 		  scaleControl: true
         });
 	      map.data.loadGeoJson('https://raw.githubusercontent.com/agnesandreea/map2/gh-pages/relief.json');
+	      map.data.setStyle({
+		fillColor: 'Ivory',
+		fillOpacity: 0.2,
+		strokeColor: 'SaddleBrown',
+		strokeWeight: 1,
+		});
+		
 	
 		
 		var input = document.getElementById('pac-input');
